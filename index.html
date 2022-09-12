@@ -1,0 +1,255 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONTS LINK -->
+    <!-- KARLA FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- NUNITO FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME CDN LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS EXTERNAL FILE LINK -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- TITLE OF THE PAGE -->
+    <title>HULK/APPS</title>
+    <!-- FAVICON IMAGE -->
+    <link rel="icon" href="./images/hulkfavicon.ico" />
+  </head>
+
+  <body>
+    <!-- NAV  CART-BUTTON STARTS FROM HERE -->
+    <nav>
+      <div class="container_fluid text-end">
+        <!-- Off canvas button -->
+        <button
+          class="button_canvas position-relative"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          style="font-size: 10px; font-weight: bold"
+        >
+          <!-- BADGE FOR CANVAS BUTTON -->
+          <span
+            class="position-absolute end-0 m-1 translate-middle-x p-0 bg-light border border-light"
+          >
+            2
+            <span class="visually-hidden">New alerts</span>
+          </span>
+        </button>
+        <!-- OFFCANVAS POPUP AT RIGHT SIDE -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header border border-bottom border-dark">
+            <h5 id="offcanvasRightLabel">YOUR BAG (2 ITEM)</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- OFFCANVAS BODY  STARTS HERE-->
+          <div class="offcanvas-body p-0">
+            <!-- ALERT 1 STARTS HERE -->
+            <div class="alert alert-dismissible fade show" role="alert">
+              <!-- SELECTED ITEM 1 STARTS HERE  -->
+              <div class="selected_item_list">
+                <div class="selected_item">
+                  <img src="./images/cart_img_1.jpg" alt="image1" />
+                </div>
+                <div class="selected_item_details">
+                  <h6>SMALL NOAMI</h6>
+                  <p>Color : Grey</p>
+                  <div class="button_price">
+                    <!-- COUNTER BUTTON -->
+                    <div class="wrapper">
+                      <span class="minus"
+                        ><img src="./images/minus.png" alt="minus_image"
+                      /></span>
+                      <span class="num">1</span>
+                      <span class="plus"
+                        ><img src="./images/plus.png" alt="plus_image"
+                      /></span>
+                    </div>
+                    <h6>$74.99</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- SELECTED ITEM 1 ENDS HERE  -->
+              <!-- ALERT 1 CLOSE BUTTON -->
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- alert 1 ENDS HERE -->
+            <!-- alert 2 STARTS HERE -->
+            <div
+              class="alert alert-dismissible fade show my-2 py-0"
+              role="alert"
+            >
+              <!-- SELECTED ITEM 2 STARTS HERE  -->
+              <div class="selected_item_list">
+                <div class="selected_item">
+                  <img src="./images/cart_img_2.jpg" alt="image2" />
+                </div>
+                <div class="selected_item_details">
+                  <h6>STORMY</h6>
+                  <p>Color : Green</p>
+                  <div class="button_price">
+                    <!-- <div class="selected_item_button"> -->
+                    <!-- COUNTER BUTTON -->
+                    <div class="wrapper">
+                      <span class="minus2"
+                        ><img src="./images/minus.png" alt="minus_image"
+                      /></span>
+                      <span class="num2">1</span>
+                      <span class="plus2"
+                        ><img src="./images/plus.png" alt="plus_image"
+                      /></span>
+                    </div>
+                    <h6>$56.99</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- SELECTED ITEM 2 ENDS HERE  -->
+              <!-- ALERT 2 CLOSE BUTTON -->
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- alert 2 ENDS HERE -->
+            <!-- SUBTOTAL DIV STARTS HERE -->
+            <div class="subtotal">
+              <div class="subtotal_child">
+                <h6>SUBTOTAL</h6>
+                <h6>$131.98</h6>
+              </div>
+              <button type="button" class="card_button">
+                <img src="./images/lock-line.png" alt="lock_image" />
+                CHECKOUT
+              </button>
+              <p>
+                Have a promo code? Enter your code at checkout. Shipping & taxes
+                are calculated during checkout.
+              </p>
+            </div>
+            <!-- SUBTOTAL DIV ENDS HERE -->
+          </div>
+          <!-- OFFCANVAS BODY  ENDS HERE-->
+        </div>
+      </div>
+    </nav>
+    <!-- NAV  CART-BUTTON ENDS HERE -->
+    <!-- HEADER STARTS FROM HERE -->
+    <header>
+      <!-- Brand logo  -->
+      <div class="container_fluid mb-4">
+        <div class="brand_logo text-center">
+          <img src="./images/logo.png" alt="brand_logo" />
+          <h6>Featured Collection</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            pulvinar ac tortor imperdiet commodo.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER ENDS HERE -->
+    <!-- SECTION CARDS STARTS FROM HERE -->
+    <section>
+      <div class="container h-auto">
+        <div class="row g-4" id="result"></div>
+      </div>
+    </section>
+    <!-- SECTION CARDS ENDS HERE -->
+    <!-- ARTICLE IMAGES FLEX STARTS FROM HERE -->
+    <article>
+      <div class="container_fluid article_container">
+        <!-- ARTICLE SUB CONTAINER STARTS FROM HERE -->
+        <div class="article_sub_container">
+          <!-- MADE FOR YOU CONTAINER STARTS HERE -->
+          <div class="madeforyou_container">
+            <div class="madeforyou_child1">
+              <h4>Made For You</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                pulvinar ac tortor imperdiet commodo.
+              </p>
+              <button type="button">LEARN MORE</button>
+            </div>
+            <div class="madeforyou_child2"></div>
+          </div>
+          <!-- MADE FOR YOU CONTAINER ENDS HERE -->
+          <div class="images">
+            <img
+              src="./images/Rectangle 1600.png"
+              alt="image1"
+              class="image1"
+            />
+            <img
+              src="./images/Rectangle 1602.png"
+              alt="image2"
+              class="image2"
+            />
+          </div>
+        </div>
+        <!-- ARTICLE SUB CONTAINER ENDS HERE -->
+        <!-- SPARKLE CONTAINER STARTS HERE -->
+        <div class="sparkle_container">
+          <div class="image3">
+            <img src="./images/sparkle_image.png" alt="image3" />
+            <h6>FIND YOUR SPARKLE.</h6>
+            <p>SHOP OUR PRODUCTS <i class="fa-solid fa-angle-right"></i></p>
+          </div>
+        </div>
+        <!-- SPARKLE CONTAINER ENDS HERE -->
+      </div>
+    </article>
+    <!-- ARTICLE IMAGES FLEX ENDS HERE -->
+
+    <!-- SCRIPT FILE LINK-->
+    <script src="./index.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
